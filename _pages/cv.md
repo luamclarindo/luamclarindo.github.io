@@ -1,3 +1,4 @@
+
 ---
 layout: archive
 title: "CV"
@@ -9,56 +10,16 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+Luam Clarindo is a percussionist, member of INET-md’s research group Creation, Performance, and Artistic Research, and a PhD student in the Artistic Creation Doctoral Program at the University of Aveiro. His work explores the intersection of the arts and digital technology through experimental performances with hybrid acoustic-digital musical instruments. His artistic and research activities have been presented in Brazil, Portugal, Spain, Germany, and the United Kingdom. He explores gesture-based sonic modulation and improvisation as methods of embodied sound creation.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+Luam holds a Bachelor’s degree in Music (2019) and a Master’s degree in Music, specializing in Sound Creation (2023), from the Federal University of Paraná (UFPR), where he studied under Dr. Indioney Rodrigues. He also studied percussion at the Conservatory of Popular Brazilian Music (CMPB) in Curitiba. His undergraduate thesis focused on improvisation and extended techniques for the pandeiro, while his master’s thesis, *Movement-Sound: Creative Interactions between Music and Dance in Free Improvisation Performances*, involved interviews and practical laboratories with local music and dance groups. This research was presented at the 14th Colloquium of the Graduate Program in Music at UFPR and published in the journal *O Mosaico*.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+From 2017 to 2023, Luam curated and performed in Improviso Dança e Música, a monthly free improvisation series in Curitiba. He directed and performed *Movement-Sound* (2023) at Casa Hoffmann – Center for Movement Studies in Curitiba and subsequently performed at MusicDance Portugal and Espaço Experimental (Centro em Movimento – c.e.m.) in Lisbon in 2024. He performed solo at the Desconcerto Free Improvisation Festival (Curitiba, 2023) and the Frequencias Raras Festival de Música y Video Experimental (Madrid, 2024). His electroacoustic works *Berra Boi Eletroacústico* and *Water Landing* (2024) were released by Núcleo Música Nova and the Brazilian Society of Electroacoustic Music (SBME). In 2025, his audiovisual works *Batucada Eletroacústica* and *Hyperfriction-Drum* were released in connection with Improfest and SBME.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+In 2025, Luam introduced and performed with Hypercuíca, a hybrid acoustic-digital instrument he designed and developed as part of his artistic research, at Intermediartes: International Conference on Media, Arts and Interaction (ESMAE, Porto) and the Digital and Technological Performativities International Colloquium at the University of Aveiro, where he also presented a paper. In 2026, he co-authored and presented a paper on Hypercuíca at the International Conference on New Interfaces for Musical Expression (NIME 2026). He also helped organize Improfest Porto and participated in Improfest Berlin, taking part in the event *Radical Luthiery, Teleperformance, and the Legacy of Hans Reichel* at Exploratorium Berlin.
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+In November 2025, Luam gave a masterclass and performance at the BINNAR Festival (Vila Nova de Famalicão) and appeared in Rodrigo Constanzo’s video series *Play Talk Play*. In January 2026, he organized and led a workshop for a community of cuíca players in Curitiba, presenting Hypercuíca and fostering an exchange between experimental practices and traditional performance.
+
+In 2026, he worked as a percussionist and arranger on *Songs of Seeking: Fragmentos de Viagem*, an INET-md project funded by the Direção-Geral das Artes (DGArtes), recording drums and percussion for the project’s album and performing in public presentations.
+
+Luam is a member of the SBME and Sonoscopia Cultural Association (Porto). Since 2017, he has organized Encontro de Pandeiros, a series of workshops with the pandeiro community, with recent editions at FIPCuritiba (Curitiba, 2023), Abadá Capoeira (Lisbon, 2024), and Casa da Horta (Porto, 2026).
