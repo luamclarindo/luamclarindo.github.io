@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Luam Clarindo"
+title: "Welcome!"
 author_profile: true
 redirect_from:
   - /about/
