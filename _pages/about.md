@@ -1,11 +1,18 @@
 ---
 permalink: /
-title: "Luam Clarindo"
+title: "Welcome!"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
+
+<style>
+.page__title { font-size: 1.55em; margin-bottom: 0.55em; }
+.page__content { font-size: 0.88em; line-height: 1.48; }
+.page__content p { margin-bottom: 0.75em; }
+.page__inner-wrap { padding-top: 0; }
+</style>
 
 I am a Brazilian percussionist, improviser and researcher based in Portugal. My work explores experimental music, free improvisation, artistic creation and the relationships between gesture, sound and performance. I am currently pursuing a PhD in Artistic Creation at the University of Aveiro. My doctoral research, **Hypercuíca: free improvisation performances with cuíca and electronics**, investigates the possibilities of expanding the cuíca through digital technologies, embodied interaction and human–computer co-improvisation.
 
