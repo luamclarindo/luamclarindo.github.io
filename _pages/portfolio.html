@@ -1,12 +1,179 @@
 ---
 layout: archive
-title: "Projects"
+title: "Hypercuíca"
 permalink: /portfolio/
 author_profile: true
 ---
 
-<h2>Hypercuíca</h2>
+<style>
+.hypercuica-page { max-width: 980px; }
+.hypercuica-page .lead { font-size: 1.12em; line-height: 1.65; }
+.hypercuica-page h2 { margin-top: 2.2em; padding-bottom: .25em; border-bottom: 1px solid #ddd; }
+.hypercuica-page h3 { margin-top: 1.5em; }
+.hypercuica-page .system-kicker { color: #238477; font-size: .78em; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: -.8em; }
+.hypercuica-page .system-subtitle { color: #666; font-style: italic; margin-top: -.5em; }
+.hypercuica-page .mapping { display: grid; grid-template-columns: repeat(auto-fit,minmax(155px,1fr)); gap: 10px; margin: 1.2em 0; }
+.hypercuica-page .mapping div { border: 1px solid #b8d9d2; border-radius: 7px; padding: 12px; background: #f3f8f6; text-align: center; }
+.hypercuica-page .mapping strong { display: block; margin-bottom: 4px; }
+.hypercuica-page .mapping small { display: block; color: #555; line-height: 1.4; }
+.hypercuica-page .chain { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; margin: 1.2em 0; }
+.hypercuica-page .chain span { border: 1px solid #bbb; border-radius: 6px; padding: 9px 12px; background: #fafafa; text-align: center; }
+.hypercuica-page .chain b { color: #777; }
+.hypercuica-page table { width: 100%; border-collapse: collapse; margin: 1em 0 1.5em; font-size: .92em; }
+.hypercuica-page th, .hypercuica-page td { border-bottom: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+.hypercuica-page th { background: #f2f2f2; }
+.hypercuica-page .video-slot { border: 1px dashed #aaa; border-radius: 6px; padding: 12px 15px; color: #666; margin: 1em 0; }
+.hypercuica-page .note { color: #555; font-size: .9em; }
+.hypercuica-page figure { margin: 1.4em 0; }
+.hypercuica-page figcaption { color: #666; font-size: .82em; margin-top: .4em; }
+@media (max-width: 600px) {
+  .hypercuica-page table { display: block; overflow-x: auto; }
+  .hypercuica-page .chain { justify-content: flex-start; }
+}
+</style>
 
-<p>Between gesture and noise, friction and feedback, Hypercuíca, Luam’s PhD invention, unfolds as a meeting of ancient resonance and digital mutation. The work reimagines the cuíca — an Afro-Brazilian friction drum often heard in samba — as a living organism of sound, gesture, and technology.</p>
+<div class="hypercuica-page">
 
-<p>In performance, bodily movement becomes sonic modulation: the performer's gestures are captured through embedded sensors, while the cuíca's raw acoustic voice is amplified, processed, and transformed in real time.</p>
+<p class="lead"><strong>Hypercuíca</strong> is an augmented cuíca, an Afro-Brazilian friction drum, developed through a series of experimental systems that explore the relationships between bodily gesture, acoustic sound, digital processing and machine co-improvisation.</p>
+
+<p>A clip-on microphone captures the cuíca's acoustic sound. The signal is processed in Ableton Live and returned through loudspeakers, while the instrument's acoustic voice remains audible throughout. From system 2 onwards, a smartphone attached to the drum provides motion data: tilt and left–right rotation are sent to the computer over OSC and mapped to sound-processing parameters.</p>
+
+<p>This page follows the development of the instrument through six systems, from early MIDI control to motion-based interaction and a machine co-improviser. The systems are presented chronologically; they are not a sequence of replacements, but different configurations that test distinct relationships between gesture and sound.</p>
+
+<h2>Gesture vocabulary</h2>
+
+<p>From system 2 onwards, two axes of the phone's gravity signal are used: up/down tilt and left/right rotation. Continuous mappings respond across a range of movement; toggles are triggered when a gesture reaches an extreme. The exact thresholds and mappings vary between systems.</p>
+
+<div class="mapping">
+  <div><strong>↑ Tilt up</strong><small>Move the top of the instrument upward. Used for continuous timbral control and, in some systems, mode switching.</small></div>
+  <div><strong>↓ Tilt down</strong><small>Move the top of the instrument downward. Used for minimum values, delay activation or stochastic reconfiguration.</small></div>
+  <div><strong>↺ Rotate left</strong><small>Rotate the instrument to the left. Depending on the system, controls reverb, the Shifter or other parameters.</small></div>
+  <div><strong>↻ Rotate right</strong><small>Rotate the instrument to the right. Depending on the system, controls delay, resonators or spatial processing.</small></div>
+</div>
+
+<h2>Six systems</h2>
+
+<section id="system-0">
+<p class="system-kicker">System 0 · Before the PhD</p>
+<h3>Controller, footswitch and Ableton Live</h3>
+<p class="system-subtitle">MIDI controller + footswitch → Ableton Live</p>
+<p>The earliest configuration amplified the cuíca into Ableton Live, where sound was shaped by hand and foot. Knobs on a MIDI controller provided continuous control, while a footswitch triggered a toggle. One press froze the delay and handed control of its left and right delay times to an LFO. The two times moved in opposite directions, so the frozen echo continued to drift rather than remaining static.</p>
+<div class="chain"><span>Cuíca + microphone</span><b>→</b><span>Ableton Live<br><small>Delay · LFO · Auto Pan</small></span><b>→</b><span>Loudspeakers</span></div>
+<div class="mapping">
+  <div><strong>Footswitch</strong><small>Toggle: freeze the delay and activate the LFO behaviour.</small></div>
+  <div><strong>MIDI controller</strong><small>Continuous knobs and MIDI notes for effect parameters.</small></div>
+</div>
+<p class="note">In the recorded mapping, the LFO moves the left delay time from 88% to 22% and the right delay time from 19% to 81%.</p>
+<div class="video-slot"><strong>Video examples</strong> — YouTube link to be added.</div>
+</section>
+
+<section id="system-1">
+<p class="system-kicker">System 1 · With Test Death, Bragança</p>
+<h3>Novation controller, footswitch and phone light</h3>
+<p class="system-subtitle">Novation + footswitch + phone light → plugdata inside Live</p>
+<p>Played with the band Test Death in Bragança, this configuration combined two parallel control layers. A Novation controller and footswitch acted directly on Ableton Live's MIDI mappings. A phone's light sensor, read through ZIG SIM and OSC, controlled the frequency of an oscillator inside a plugdata patch. The oscillator was multiplied with the cuíca input, producing amplitude/ring modulation and a metallic, sideband-rich timbre. The patch also included routing for gravity data to a drive stage and a threshold-triggered table looper.</p>
+<div class="chain"><span>Novation + footswitch</span><b>→</b><span>Live MIDI mappings</span></div>
+<div class="chain"><span>Phone light + motion</span><b>→</b><span>ZIG SIM / OSC</span><b>→</b><span>plugdata inside Live</span><b>→</b><span>Sound processing</span></div>
+<table>
+<thead><tr><th>Control source</th><th>Function</th></tr></thead>
+<tbody>
+<tr><td>Novation / footswitch</td><td>Delay wet and feedback, freeze, LFO, Shifter, ring modulation, looper repeat and return sends.</td></tr>
+<tr><td>Phone light</td><td>Scaled to oscillator frequency (approximately 100–500 Hz), modulating the cuíca input.</td></tr>
+<tr><td>Phone gravity</td><td>Routed in plugdata to a tanh drive stage and threshold-triggered table recording/playback.</td></tr>
+</tbody>
+</table>
+<div class="video-slot"><strong>Video examples</strong> — YouTube link to be added.</div>
+</section>
+
+<section id="system-2">
+<p class="system-kicker">System 2 · PhD project defence, University of Aveiro, 2025</p>
+<h3>The defence patch</h3>
+<p class="system-subtitle">ZIG SIM gravity → Max for Live</p>
+<p>This was the first configuration to bring the phone's gravity sensor and the main control logic into a single Max for Live patch. The Shifter remained active, while gesture continuously shaped drive, envelope following, reverb and delay. Upward tilt increased a drive/reduction macro combining Redux, Drum Buss, saturation, compression and fine pitch detuning. Rotation controlled the Shifter's envelope-follow amount across the sweep, with a reverb wash growing to the left and delay/feedback growing to the right. The only toggle was the Hybrid Reverb freeze.</p>
+<div class="mapping">
+  <div><strong>↑ Tilt up</strong><small>Continuous drive and reduction: Redux, Drum Buss, saturation, glue makeup and fine pitch.</small></div>
+  <div><strong>↺ Rotate left</strong><small>Increases the Hybrid Reverb wash.</small></div>
+  <div><strong>↻ Rotate right</strong><small>Increases delay and feedback.</small></div>
+  <div><strong>Whole rotation sweep</strong><small>Controls the Shifter envelope follower (−24 to +24 semitones); Shifter stays on.</small></div>
+  <div><strong>Freeze</strong><small>Toggle for Hybrid Reverb freeze.</small></div>
+</div>
+<div class="chain"><span>Phone gravity</span><b>→</b><span>ZIG SIM · OSC</span><b>→</b><span>Max for Live</span><b>→</b><span>Live macros</span></div>
+<div class="video-slot"><strong>Video examples</strong> — YouTube link to be added.</div>
+</section>
+
+<section id="system-3">
+<p class="system-kicker">System 3 · NIME 2026</p>
+<h3>The NIME mapping</h3>
+<p class="system-subtitle">Gravity → Max for Live · three module toggles + two continuous macros</p>
+<p>Presented in the paper “Hypercuíca: Augmenting and Performing with an Afro-Brazilian Friction Drum” (NIME 2026, London), this mapping combines structural switches with continuous control. A full left rotation toggles the Shifter, a full right rotation toggles the Resonators, and a full downward tilt toggles the Delay. Between these extremes, the gestures continuously shape the active transformations.</p>
+<div class="mapping">
+  <div><strong>↺ Full left</strong><small>Toggle: Shifter on/off.</small></div>
+  <div><strong>↻ Full right</strong><small>Toggle: Resonators on/off.</small></div>
+  <div><strong>↓ Full tilt down</strong><small>Toggle: Delay on/off.</small></div>
+  <div><strong>↑ Tilt up</strong><small>Continuous macro across delay, feedback, reverb, resonator decay, Shifter, EQ, saturation and gain.</small></div>
+  <div><strong>Rotation sweep</strong><small>Continuous macro across panning, Shifter pitch, delay time and LFO amount.</small></div>
+</div>
+<p>The mappings were refined iteratively for ergonomic use, gestural clarity and expressive continuity. They describe a functional configuration rather than a prescriptive or definitive mapping.</p>
+<p><a href="https://nime.org/proc/nime2026_81/" target="_blank" rel="noopener">Read the NIME 2026 paper</a>.</p>
+<div class="video-slot"><strong>Video examples</strong> — YouTube links to be added.</div>
+</section>
+
+<section id="system-4">
+<p class="system-kicker">System 4 · Frictionary · Intermediartes 2026</p>
+<h3>A vocabulary of gesture-based sonic modulations</h3>
+<p class="system-subtitle">Natural ↔ Radical · continuous gestures + stochastic reconfiguration</p>
+<p><em>Frictionary</em> joins “friction” (how the cuíca makes sound) and “dictionary” (a named vocabulary of gestures). It was used to record an album and was not performed publicly. The system introduces two processing modes and two interaction types.</p>
+<table>
+<thead><tr><th>Gesture</th><th>Action</th><th>Mode</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>Tilt down</td><td>Drive it</td><td>Natural · continuous</td><td>Increases saturation.</td></tr>
+<tr><td>Rotate left</td><td>Cave it</td><td>Natural · continuous</td><td>Increases reverb.</td></tr>
+<tr><td>Rotate right</td><td>Echo it</td><td>Natural · continuous</td><td>Controls delay.</td></tr>
+<tr><td>Tilt up (~75°)</td><td>Flip it</td><td>Global · toggle</td><td>Switches between Natural and Radical.</td></tr>
+<tr><td>Tilt down (~75°)</td><td>Topsy-turvy</td><td>Global · toggle</td><td>Re-rolls a random effect chain, parameter start values and gesture assignments.</td></tr>
+<tr><td>Tilt or rotate</td><td>Ghost it</td><td>Radical · continuous</td><td>Modulates randomly assigned parameters.</td></tr>
+</tbody>
+</table>
+<p>Natural mode extends the instrument's qualities through continuous saturation, reverb and delay. Radical mode introduces stochastic processes. Each downward Topsy-turvy gesture re-rolls three layers: which effects are active (up to four of Grain Delay, Shifter, Resonator and Pitch), their initial parameter values, and which parameters are assigned to tilt or rotation. The gesture therefore does not only control the sound; it renegotiates its own control structure. Tilting up returns to Natural mode.</p>
+<div class="mapping">
+  <div><strong>Natural</strong><small>Predictable · continuous<br>Drive it · Cave it · Echo it</small></div>
+  <div><strong>Radical</strong><small>Stochastic · toggle + continuous<br>Topsy-turvy · Ghost it</small></div>
+</div>
+<div class="video-slot"><strong>Video examples</strong> — YouTube link to be added.</div>
+</section>
+
+<section id="system-5">
+<p class="system-kicker">System 5 · Flowfal + Somax2</p>
+<h3>Motion control and a machine co-improviser</h3>
+<p class="system-subtitle">Ready-made plugins · no custom Max for Live programming</p>
+<p>This configuration replaces ZIG SIM with FlowfalMap devices and introduces Somax2 as a machine co-improviser. Two FlowfalMap instances read the phone's Roll (rotation) and Pitch (tilt). The cuíca feeds two Ableton Live tracks, an <em>Influencer</em> and a <em>Player</em>, which drive Somax2. Each track has its own convolution reverb: an Arena hall of about 20 seconds on the Influencer and larger spaces on the Player.</p>
+<div class="mapping">
+  <div><strong>↻ Rotate right</strong><small>Raises reverb decay and wet level on both tracks, while moving their panning controls in opposite directions.</small></div>
+  <div><strong>↑ Tilt up</strong><small>Raises Somax2's probability parameter, so the machine responds more often.</small></div>
+</div>
+<p>The corpus contains 20 minutes of cuíca improvisation recorded with the same microphone, favouring slow, whale-like sonorities over repetitive material. The spacious source material shapes the character of the machine's responses. A current limitation is that Somax2 for Live builds its corpus offline; using Somax2 for Max to build the corpus while playing is a next step to explore.</p>
+<div class="chain"><span>Cuíca microphone</span><b>→</b><span>Influencer + Player</span><b>→</b><span>Somax2</span><b>→</b><span>Output</span></div>
+<div class="video-slot"><strong>Video examples</strong> — YouTube link to be added.</div>
+</section>
+
+<h2>Across the systems</h2>
+<p>Systems 2 to 5 share the same two gesture axes, but the role of gesture changes. In system 2 it is a continuous controller of timbre. In system 3, the extremes become structural switches while the middle range remains continuous. In system 4, gesture also reassigns its own control structure. In system 5, tilt influences how often a machine improviser responds, while rotation shapes the acoustic space.</p>
+<table>
+<thead><tr><th>Movement</th><th>System 2 · Defence</th><th>System 3 · NIME</th><th>System 4 · Frictionary</th><th>System 5 · Flowfal</th></tr></thead>
+<tbody>
+<tr><td>↑ Tilt up</td><td>Drive / grit</td><td>Continuous macro across effects</td><td>Flip: Natural ↔ Radical</td><td>More Somax2 responses</td></tr>
+<tr><td>↓ Tilt down</td><td>Effects return to minimum</td><td>Delay toggle</td><td>Drive / Topsy-turvy re-roll</td><td>Not mapped</td></tr>
+<tr><td>↺ Rotate left</td><td>Reverb wash</td><td>Shifter toggle</td><td>Cave it: reverb</td><td>Less reverb</td></tr>
+<tr><td>↻ Rotate right</td><td>Delay + feedback</td><td>Resonators toggle</td><td>Echo it: delay</td><td>More reverb</td></tr>
+</tbody>
+</table>
+
+<h2>Current performance configuration</h2>
+<p>In the most recent performance configuration documented here, two Ableton Live tracks run in parallel: one uses the NIME mapping (system 3), and the other uses the earlier defence mapping (system 2). The module toggles of system 3 and the always-on Shifter, grit, envelope, reverb and delay behaviour of system 2 act on the cuíca together.</p>
+
+<div class="chain"><span>Cuíca + microphone</span><b>→</b><span>Live track 1 · NIME mapping<br><small>Shifter, Resonators, Delay toggles + continuous macros</small></span><b>↘</b><span>Mix / output</span></div>
+<div class="chain"><span>Phone gravity</span><b>→</b><span>Live track 2 · defence mapping<br><small>Always-on Shifter, grit, envelope, reverb ↔ delay, freeze</small></span><b>↗</b><span></span></div>
+
+<p class="note">This page adapts the working mapping catalogue (November 2026). Some implementation details and historical mappings remain open to verification; the descriptions above follow the current document.</p>
+
+</div>
