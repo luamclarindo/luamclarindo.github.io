@@ -16,9 +16,9 @@ author:
   avatar           : "20260517_192459 (1).jpg"
   name             : "Luam Clarindo"
   pronouns         :
-  bio              : "Brazilian percussionist, improviser and researcher. PhD researcher in Artistic Creation at the University of Aveiro, working with cuíca, electronics, embodied interaction and human-computer co-improvisation."
+  bio              : "Brazilian percussionist, improviser and researcher. PhD student in Artistic Creation at the University of Aveiro, working with cuíca, electronics, embodied interaction and human-computer co-improvisation."
   location         : "Portugal"
-  employer         : "University of Aveiro · INET-md"
+  employer         : "University of Aveiro, INET-md"
   uri              :
   email            :
 
@@ -52,7 +52,6 @@ author:
   foursquare       :
   goodreads        :
   google_plus      :
-  keybase          :
   instagram        :
   lastfm           :
   linkedin         :
@@ -124,6 +123,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
+  footnote_nr: 1
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
@@ -226,7 +226,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
+  
 # HTML Compression
 compress_html:
   clippings: all
