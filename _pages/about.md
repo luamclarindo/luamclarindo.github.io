@@ -7,26 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a Brazilian percussionist, improviser and researcher based in Portugal. My work explores experimental music, artistic creation and the relationships between gesture, sound and listening.
+# Luam Clarindo
 
-I am currently pursuing a PhD in Artistic Creation at the University of Aveiro, as part of INET-md – Institute of Ethnomusicology, Centre for Studies in Music and Dance. My doctoral research, **Hypercuíca: free improvisation performances with cuíca and electronics**, investigates the possibilities of expanding the cuíca through digital technologies, embodied interaction and human–computer co-improvisation.
+I am a Brazilian percussionist, improviser and researcher based in Portugal. My work explores experimental music, free improvisation, artistic creation and the relationships between gesture, sound and performance. I am currently pursuing a PhD in Artistic Creation at the University of Aveiro. My doctoral research, **Hypercuíca: free improvisation performances with cuíca and electronics**, investigates the possibilities of expanding the cuíca through digital technologies, embodied interaction and human–computer co-improvisation.
 
-My artistic practice brings together percussion, free improvisation, electronics and collaborative approaches to music-making. I am particularly interested in the ways digital systems can become active partners in improvisation, creating new relationships between instrumental gesture, sound transformation and musical agency.
+I believe imagination, creativity and curiosity are at the heart of artistic creation. I have a deep urge to discover things and am always looking for new forms of expression — especially in music, but also in dance, theatre, film, painting, audiovisual art, philosophy, poetry and science. Learning about other people's work, developing my own ideas and sharing them (nowadays, often through the internet) are all things that make life more meaningful to me.
 
-Alongside my research, I develop performances, workshops and collaborative projects, and contribute to the fields of experimental music and new interfaces for musical expression.
+On this website, you will find an overview of my artistic work and career, including performances, talks, compositions and photos. I am also gathering technical information about the projects I have been developing with Hypercuíca, which will hopefully support the writing of my PhD thesis.
 
----
+There is also a blog where I share personal thoughts and reflections on life. Since my research is partly autoethnographic, I see this space as a way to explore the connections between art and life. The blog is written in Brazilian Portuguese.
 
-### Current research
+Thank you for being here. Feel free to send me a message:
 
-**Hypercuíca**
-
-An ongoing artistic research project exploring the cuíca through electronics, sensor-based interaction and improvisation. It investigates how physical gestures and digital systems can interact in the creation of new musical possibilities.
-
-### Explore
-
-- **Research** – doctoral research, methods and ongoing experiments.
-- **Publications** – academic papers and research outputs.
-- **Portfolio** – performances, collaborations and artistic projects.
-- **Blog** – notes, reflections, experiments and research processes.
-- **CV** – academic and artistic background.
+[luamclarindo(at)gmail(dot)com](mailto:luamclarindo@gmail.com)
