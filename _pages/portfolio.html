@@ -6,8 +6,8 @@ author_profile: true
 ---
 
 <style>
-.hypercuica-page { max-width: 980px; }
- .hypercuica-page { font-size: .96em; }
+.hypercuica-page { width:100%; max-width:900px; margin:0 auto; padding:0 clamp(16px, 2.5vw, 30px); box-sizing:border-box; font-size:.94em; }
+.hypercuica-page * { box-sizing:border-box; }
 .hypercuica-page .lead { font-size: 1em; line-height: 1.6; }
 .hypercuica-page h2 { margin-top: 2.2em; padding-bottom: .25em; border-bottom: 1px solid #ddd; }
 .hypercuica-page h3 { margin-top: 1.5em; }
@@ -16,22 +16,23 @@ author_profile: true
 .hypercuica-page .mapping { display: grid; grid-template-columns: repeat(auto-fit,minmax(155px,1fr)); gap: 10px; margin: 1.2em 0; }
  .hypercuica-page .mapping div { border: 1px solid currentColor; border-radius: 7px; padding: 12px; background: transparent; text-align: center; }
 .hypercuica-page .mapping strong { display: block; margin-bottom: 4px; }
-.hypercuica-page .mapping small { display: block; color: #555; line-height: 1.4; }
+.hypercuica-page .mapping small { display:block; color:inherit; opacity:.86; line-height:1.4; }
 .hypercuica-page .chain { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; margin: 1.2em 0; }
  .hypercuica-page .chain span { border: 1px solid currentColor; border-radius: 6px; padding: 9px 12px; background: transparent; text-align: center; }
 .hypercuica-page .chain b { color: #777; }
 .hypercuica-page table { width: 100%; border-collapse: collapse; margin: 1em 0 1.5em; font-size: .92em; }
 .hypercuica-page th, .hypercuica-page td { border-bottom: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
  .hypercuica-page th { background: transparent; }
-.hypercuica-page .table-wrap { width:100%; overflow-x:auto; }
-.hypercuica-page .table-wrap table { min-width:620px; }
+.hypercuica-page .table-wrap { width:100%; max-width:850px; margin:1em auto 1.5em; overflow-x:auto; }
+.hypercuica-page .table-wrap table { min-width:0; font-size:.82em; }
+.hypercuica-page th, .hypercuica-page td { padding:5px 7px; }
 .hypercuica-page .hc-figure { background:transparent; border-color:currentColor; }
 .hypercuica-page .hc-figure .hc-label,.hypercuica-page .hc-figure .hc-detail { fill:currentColor; }
 .hypercuica-page .hc-figure .hc-detail { opacity:.82; }
 .hypercuica-page .hc-figure .hc-arrow { stroke:currentColor; }
 .hypercuica-page .hc-figure .hc-arrowhead { fill:currentColor; }
 .hypercuica-page .hc-figure .hc-node { fill:transparent !important; stroke:currentColor; }
-.hypercuica-page .video { width: 78%; max-width: 720px; margin: 1.1em auto 1.8em; }
+.hypercuica-page .video { width:72%; max-width:620px; margin:1em auto 1.5em; }
 .hypercuica-page .video-frame { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
 .hypercuica-page .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 .hypercuica-page .video-caption { color: #666; font-size: .86em; margin-top: .45em; text-align: center; }
@@ -45,14 +46,15 @@ author_profile: true
   .hypercuica-page .video { width: 100%; }
 }
 
-.hypercuica-page .hc-figure{margin:1.35em 0 1.7em;padding:16px 14px 12px;border:1px solid #d7dce0;border-radius:10px;background:#fbfcfd;overflow:hidden}
+.hypercuica-page .hc-figure{max-width:820px;margin:1.2em auto 1.5em;padding:12px 10px 9px;border:1px solid currentColor;border-radius:8px;background:transparent;overflow:hidden}
+.hypercuica-page > figure:not(.hc-figure) img, .hypercuica-page .hc-figure img {display:block;width:100%;max-width:560px;height:auto;margin:0 auto;}
 .hypercuica-page .hc-figure svg{display:block;width:100%;height:auto;overflow:visible}
-.hypercuica-page .hc-figure figcaption{margin-top:8px;color:#46515b;font-size:.82em;line-height:1.45}
+.hypercuica-page .hc-figure figcaption{margin-top:8px;color:inherit;font-size:.8em;line-height:1.45;opacity:.82}
 .hypercuica-page .hc-figure .hc-node{stroke-width:1.6}
-.hypercuica-page .hc-figure .hc-label{font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#17212b}
-.hypercuica-page .hc-figure .hc-detail{font:14px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#34414d}
-.hypercuica-page .hc-figure .hc-arrow{stroke:#596875;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.hypercuica-page .hc-figure .hc-arrowhead{fill:#596875}
+.hypercuica-page .hc-figure .hc-label{font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:currentColor !important}
+.hypercuica-page .hc-figure .hc-detail{font:14px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:currentColor !important;opacity:.82}
+.hypercuica-page .hc-figure .hc-arrow{stroke:currentColor !important;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.hypercuica-page .hc-figure .hc-arrowhead{fill:currentColor !important}
 @media(max-width:600px){.hypercuica-page .hc-figure{padding:10px 6px}.hypercuica-page .hc-figure figcaption{font-size:.78em}}
 
 
@@ -66,6 +68,7 @@ author_profile: true
 <div class="hypercuica-page">
 
 <p class="lead"><strong>Hypercuíca</strong> is an augmented cuíca, an Afro-Brazilian friction drum, developed through an ongoing process of experimentation with bodily gesture, acoustic sound, digital processing and human–machine musical interaction.</p>
+<p>Hypercuíca is a research artifact developed within my ongoing PhD in Artistic Creation (PDCA) at the University of Aveiro, under the supervision of Dr. Filipe Lopes and Dr. Nuno Aroso.</p>
 
 <p>A clip-on microphone captures the cuíca's acoustic sound. The signal is processed in Ableton Live and returned through loudspeakers, while the instrument's acoustic voice remains audible throughout. Across different configurations, controllers, a smartphone's sensors and ready-made software devices have been used to explore how physical movement can shape sound and, more recently, invite a machine co-improviser into the performance.</p>
 <div class="image-pair">
@@ -77,25 +80,24 @@ author_profile: true
 
 <h3>Supplementary material for the <a href="https://nime.org/proceedings/2026/nime2026_81.pdf" target="_blank" rel="noopener">NIME paper</a></h3>
 <div class="video">
-  <div class="video-frame"><iframe src="https://www.youtube.com/embed/cAyhnUkYrso" title="Hypercuíca — NIME demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <p class="video-caption">Video demonstration accompanying the NIME paper.</p>
+  <div class="video-frame"><iframe src="https://www.youtube.com/embed/cAyhnUkYrso" title="Hypercuíca — NIME demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <p class="video-caption">Produced to illustrate the NIME mapping and accompany the paper.</p>
 </div>
 
-<p>The paper combines technical documentation of the instrument and its gesture mappings with historical and cultural perspectives on the cuíca. It discusses earlier experiments with the instrument by Brazilian percussionists, including Galante's work with the puita, Naná Vasconcelos and Paulinho Bicolor. The article therefore offers more than a technical account: it also traces a broader musical context for imagining new possibilities with the cuíca.</p>
 <h3>From cuíca to Hypercuíca</h3>
 <p>This video introduces the cuíca as a friction drum, briefly explaining how its sound is produced through friction between a stick and a membrane, and then presents selected gesture-to-effect relationships explored in Hypercuíca. These examples belong to particular configurations, not a fixed mapping shared by every system described below.</p>
 <div class="video">
   <div class="video-frame"><iframe src="https://www.youtube.com/embed/uOLmvt5QJ9k?start=83" title="Hypercuíca — explanation of selected mappings" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </div>
 
-<h2>Before the PhD: computer music and cuíca experiments</h2>
+<h2>Computer music and cuíca experiments</h2>
 <p>My experiments with the cuíca began well before the PhD, as did my interest in making music with computers. Some of my earliest encounters with computer music were playful and exploratory: <em>Mario Paint</em>, Windows Sound Recorder (Gravador de som), and composing experimental pieces with Noteworthy Composer. These experiences gradually developed into processing acoustic sounds and improvising with Ableton Live. Working with acoustic instruments and live electronics was already part of my practice before the doctoral project.</p>
-<p><a href="https://www.youtube.com/watch?v=5YgrqyfWa70" target="_blank" rel="noopener">Watch an early cuíca and Ableton Live experiment (2020)</a>. Recorded in 2020, this video documents an approach to processing and improvising with the acoustic instrument several years before the PhD.</p>
+<p><a href="https://www.youtube.com/watch?v=5YgrqyfWa70" target="_blank" rel="noopener">Watch an early cuíca and Ableton Live experiment (2020)</a>. Recorded in 2020, this video documents an approach to processing and improvising with the acoustic instrument, before Hypercuíca was born.</p>
+<h2>Systems designed so far</h2>
+
 <h2>Gesture vocabulary</h2>
 <p>From System 2 onwards, a smartphone attached to the cuíca provides motion data. Two axes are used: up/down tilt and left/right rotation. Continuous mappings respond across a range of movement; toggles are triggered when a gesture reaches a threshold or an extreme. The exact functions and thresholds vary between configurations.</p>
 <figure class="hc-figure"><img src="https://raw.githubusercontent.com/luamclarindo/luamclarindo.github.io/master/images/image-8.png" alt="Gesture vocabulary diagram for the Hypercuíca"><figcaption>Gesture vocabulary — tilt and rotation axes</figcaption></figure>
-
-<h2>Systems designed so far</h2>
 
 <section id="system-0">
 <p class="system-kicker">System 0 · Before the PhD</p>
@@ -119,7 +121,7 @@ author_profile: true
 <p class="system-subtitle">Novation + footswitch + phone sensors → plugdata inside Ableton Live</p>
 <p>Named <em>Test Death</em> because this was the configuration used in a performance opening a concert by the Brazilian band Test Death in Bragança. It combined two parallel control layers. A Novation Launchkey MK3 controller and footswitch acted directly on Ableton Live's MIDI mappings. A phone's light sensor, read through ZIG SIM and OSC, controlled the frequency of an oscillator inside a plugdata patch. The oscillator was multiplied with the cuíca input, producing amplitude/ring modulation and a metallic, sideband-rich timbre. The patch also contained routing for phone gravity data to a drive stage and a threshold-triggered table looper. This was before the use of Max for Live in the project.</p>
 <figure class="hc-figure" aria-labelledby="hc-s1-caption"><svg viewBox="0 0 960 230" role="img" aria-labelledby="hc-s1-title hc-s1-desc" xmlns="http://www.w3.org/2000/svg"><title id="hc-s1-title">System 1 — parallel MIDI and phone-sensor control paths</title><desc id="hc-s1-desc">High-contrast diagram of the instrument, gesture control, processing and output relationships.</desc><defs><marker id="hc-s1-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" class="hc-arrowhead"/></marker></defs><g><rect class="hc-node" x="20" y="25" width="210" height="75" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="35" y="54">Novation + pedal</text><text class="hc-detail" x="35" y="79">MIDI control</text></g><path class="hc-arrow" d="M230 62 L310 62" marker-end="url(#hc-s1-arrow)"/><g><rect class="hc-node" x="315" y="25" width="235" height="75" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="330" y="54">Ableton Live</text><text class="hc-detail" x="330" y="79">Direct MIDI mappings</text></g><g><rect class="hc-node" x="20" y="130" width="210" height="75" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="35" y="159">Phone sensors</text><text class="hc-detail" x="35" y="184">Light · gravity</text></g><path class="hc-arrow" d="M230 167 L310 167" marker-end="url(#hc-s1-arrow)"/><g><rect class="hc-node" x="315" y="130" width="235" height="75" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="330" y="159">ZIG SIM / OSC</text><text class="hc-detail" x="330" y="184">Sensor data</text></g><path class="hc-arrow" d="M550 167 L620 167" marker-end="url(#hc-s1-arrow)"/><g><rect class="hc-node" x="625" y="130" width="310" height="75" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="640" y="159">plugdata in Live</text><text class="hc-detail" x="640" y="184">AM / ring modulation · drive</text></g><path class="hc-arrow" d="M550 62 L585 62 L585 105 L625 105" marker-end="url(#hc-s1-arrow)"/></svg><figcaption id="hc-s1-caption">System 1 — parallel MIDI and phone-sensor control paths</figcaption></figure>
-<h4>Live MIDI mappings (channel 6)</h4><div class="table-wrap"><table><thead><tr><th>Control</th><th>Target in Live</th><th>Range</th><th>Type</th></tr></thead><tbody><tr><td>Note C2</td><td>LFO and Auto Pan: Device On</td><td>on / off</td><td>toggle</td></tr><tr><td>Note E2</td><td>Delay: Dry/Wet</td><td>4.7 → 44 %</td><td>continuous</td></tr><tr><td>CC 1</td><td>Delay: Feedback</td><td>16 → 95 %</td><td>continuous</td></tr><tr><td>CC 62</td><td>Delay: Freeze</td><td>64 → 127</td><td>toggle</td></tr><tr><td>Note D2</td><td>LFO: Hold</td><td>on / off</td><td>toggle</td></tr><tr><td>CC 23</td><td>Shifter: LFO Rate</td><td>0.01 → 50 Hz</td><td>continuous</td></tr><tr><td>CC 24</td><td>Shifter: LFO Amount</td><td>0 Hz → 5 kHz</td><td>continuous</td></tr><tr><td>CC 22</td><td>Shifter: RingMod Coarse</td><td>1 Hz → 10 kHz</td><td>continuous</td></tr><tr><td>CC 25</td><td>Knob 1 Super Looper: Repeat</td><td>0 → 127</td><td>continuous</td></tr><tr><td>CC 21 / CC 28</td><td>Return sends A-Delay | Auto Filter, B-Delay; B-Delay feedback</td><td>−∞ → 0 dB; 0 → 95 %</td><td>continuous</td></tr></tbody></table></div>
+<h4>Live MIDI mappings</h4><div class="table-wrap"><table><thead><tr><th>Control</th><th>Target in Live</th><th>Range</th><th>Type</th></tr></thead><tbody><tr><td>Note C2</td><td>LFO and Auto Pan: Device On</td><td>on / off</td><td>toggle</td></tr><tr><td>Note E2</td><td>Delay: Dry/Wet</td><td>4.7 → 44 %</td><td>continuous</td></tr><tr><td>CC 1</td><td>Delay: Feedback</td><td>16 → 95 %</td><td>continuous</td></tr><tr><td>CC 62</td><td>Delay: Freeze</td><td>64 → 127</td><td>toggle</td></tr><tr><td>Note D2</td><td>LFO: Hold</td><td>on / off</td><td>toggle</td></tr><tr><td>CC 23</td><td>Shifter: LFO Rate</td><td>0.01 → 50 Hz</td><td>continuous</td></tr><tr><td>CC 24</td><td>Shifter: LFO Amount</td><td>0 Hz → 5 kHz</td><td>continuous</td></tr><tr><td>CC 22</td><td>Shifter: RingMod Coarse</td><td>1 Hz → 10 kHz</td><td>continuous</td></tr><tr><td>CC 25</td><td>Knob 1 Super Looper: Repeat</td><td>0 → 127</td><td>continuous</td></tr><tr><td>CC 21 / CC 28</td><td>Return sends A-Delay | Auto Filter, B-Delay; B-Delay feedback</td><td>−∞ → 0 dB; 0 → 95 %</td><td>continuous</td></tr></tbody></table></div>
 <h4>plugdata patch</h4><div class="table-wrap"><table><thead><tr><th>Input</th><th>Processing</th><th>Range / result</th></tr></thead><tbody><tr><td>/phone/light</td><td>Scaled to oscillator frequency (osc~)</td><td>0–500 → 100–500 Hz</td></tr><tr><td>osc~ × cuíca (adc~)</td><td>Amplitude / ring modulation</td><td>Metallic, sideband-rich timbre</td></tr><tr><td>/phone/gravity</td><td>Scaled into a drive stage (tanh) and threshold-triggered table record / playback</td><td>Read from the patch</td></tr></tbody></table></div>
 <p>The amplitude-modulation patch produced one of the timbres that remained especially meaningful to the subsequent development of the instrument.</p>
 <div class="video">
@@ -128,7 +130,7 @@ author_profile: true
 </div>
 <div class="video">
   <div class="video-frame"><iframe src="https://www.youtube.com/embed/xrb16URNj6E" title="Hypercuíca — MIDI controller and delay mapping experiment" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <p class="video-caption">DIY video recorded at an old house, documenting an early experiment with the cuíca and electronic processing.</p>
+  <p class="video-caption">An early experiment with the cuíca and electronic processing, recorded in an old house.</p>
 </div>
 </section>
 
@@ -168,7 +170,7 @@ author_profile: true
 <figure class="hc-figure" aria-labelledby="hc-s3-caption"><svg viewBox="0 0 960 220" role="img" aria-labelledby="hc-s3-title hc-s3-desc" xmlns="http://www.w3.org/2000/svg"><title id="hc-s3-title">System 3 — three gesture-triggered modules and continuous macros</title><desc id="hc-s3-desc">High-contrast diagram of the instrument, gesture control, processing and output relationships.</desc><defs><marker id="hc-s3-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" class="hc-arrowhead"/></marker></defs><g><rect class="hc-node" x="20" y="65" width="180" height="90" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="35" y="94">Phone gravity</text><text class="hc-detail" x="35" y="119">ZIG SIM · OSC</text></g><path class="hc-arrow" d="M200 110 L255 110" marker-end="url(#hc-s3-arrow)"/><g><rect class="hc-node" x="260" y="65" width="190" height="90" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="275" y="94">Max for Live</text><text class="hc-detail" x="275" y="119">Gesture mapping</text></g><g><rect class="hc-node" x="510" y="5" width="200" height="58" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="525" y="34">LEFT · toggle</text><text class="hc-detail" x="525" y="59">Shifter</text></g><g><rect class="hc-node" x="510" y="81" width="200" height="58" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="525" y="110">RIGHT · toggle</text><text class="hc-detail" x="525" y="135">Resonators</text></g><g><rect class="hc-node" x="510" y="157" width="200" height="58" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="525" y="186">DOWN · toggle</text><text class="hc-detail" x="525" y="211">Delay</text></g><path class="hc-arrow" d="M450 110 L480 110 L480 34 L510 34 M480 110 L510 110 M480 110 L480 186 L510 186" marker-end="url(#hc-s3-arrow)"/><g><rect class="hc-node" x="745" y="65" width="195" height="90" rx="10" fill="none" stroke="currentColor"/><text class="hc-label" x="760" y="94">Continuous macros</text><text class="hc-detail" x="760" y="119">Tilt + rotation</text></g><path class="hc-arrow" d="M710 110 L745 110" marker-end="url(#hc-s3-arrow)"/></svg><figcaption id="hc-s3-caption">System 3 — three gesture-triggered modules and continuous macros</figcaption></figure>
 <h4>Toggles</h4><div class="table-wrap"><table><thead><tr><th>Gesture</th><th>Target</th><th>Type</th></tr></thead><tbody><tr><td>Rotate fully left (90°)</td><td>Shifter: Device On (64 → 127)</td><td>toggle</td></tr><tr><td>Rotate fully right (90°)</td><td>Resonators: on / off</td><td>toggle</td></tr><tr><td>Tilt fully down (90°)</td><td>Delay: on / off</td><td>toggle</td></tr></tbody></table></div>
 <h4>Continuous macros (minimum → maximum)</h4><div class="table-wrap"><table><thead><tr><th>Macro / gesture</th><th>Device · parameter</th><th>Range</th><th>Type</th></tr></thead><tbody><tr><td>drv/freq (tilt: down → up)</td><td>Delay · L Delay Time</td><td>1 ms → 5 s</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>Delay · Feedback / Dry-Wet</td><td>0 → 32 % / 31 → 100 %</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>Resonators · Decay</td><td>5.47 → 72.7</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>Shifter · LFO Rate / Delay Feedback</td><td>0.01 → 50 Hz / 6.3 → 136 %</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>Shifter · Dry/Wet</td><td>100 → 0 %</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>EQ Eight · 2 Frequency A</td><td>10 Hz → 965 Hz</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>Reverb · Decay Time / Dry-Wet</td><td>200 ms → 18.8 s / 0 → 29 %</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>Saturator · Drive</td><td>−6.8 → 9.6 dB</td><td>continuous</td></tr><tr><td>drv/freq (tilt: down → up)</td><td>Utility · Gain</td><td>4.92 → −6.56 dB</td><td>continuous</td></tr><tr><td>Macro 2 (rotation: left → right)</td><td>Shifter · LFO Amount / Pitch Coarse</td><td>2.47 → 24 st / −24 → +24 st</td><td>continuous</td></tr><tr><td>Macro 2 (rotation: left → right)</td><td>Shifter · Delay Time Second</td><td>16.3 ms → 6.28 s</td><td>continuous</td></tr><tr><td>Macro 2 (rotation: left → right)</td><td>Utility · Balance</td><td>50L → 50R</td><td>continuous</td></tr></tbody></table></div>
-<p class="note">Ranges are read from the current macro-mapping print. A few differ from Table 1 of the published paper (delay time, reverb decay and wet, Saturator drive, and Utility gain), because I sometimes adjust the mappings as the instrument develops; they are working relationships, not fixed assignments.</p>
+<p class="note">The ranges reflect the current mapping and may differ slightly from the published paper as the instrument develops; they are working relationships rather than fixed assignments.</p>
 <p>The mappings were refined iteratively for ergonomic use, gestural clarity and expressive continuity. They describe a functional configuration rather than a prescriptive or definitive mapping.</p>
 <div class="video">
   <div class="video-frame"><iframe src="https://www.youtube.com/embed/QnesJvhAXYI?start=495" title="Hypercuíca — NIME mapping performance example 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
@@ -179,7 +181,7 @@ author_profile: true
 <div class="video">
   <div class="video-frame"><iframe src="https://www.youtube.com/embed/KxHihmp11mU" title="Hypercuíca — NIME mapping performance example 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </div>
-<p><a href="https://www.youtube.com/watch?v=6rxqDa6LD-8&amp;t=558s" target="_blank" rel="noopener">Watch Play Talk Play with Rodrigo Constanzo</a> (also available on the <a href="/media/">Media page</a>). The NIME mapping was used in the first part of this performance; in the second, the cuíca was played only through Rodrigo Constanzo's piezo microphones.</p>
+<p><a href="https://www.youtube.com/watch?v=6rxqDa6LD-8&amp;t=558s" target="_blank" rel="noopener">Watch Play Talk Play with Rodrigo Constanzo</a>. The NIME mapping was used in the first part of this performance; in the second, the cuíca was played only through Rodrigo Constanzo's piezo microphones.</p>
 </section>
 
 <section id="system-4">
@@ -189,17 +191,8 @@ author_profile: true
 <p><em>Frictionary</em> joins “friction” (how the cuíca makes sound) and “dictionary” (a named vocabulary of gestures). Inspired by the idea of an actual interactive system, this configuration was developed for a paper presented at Intermediartes 2026. It was used to record an album, rather than performed publicly. The system introduces two processing modes and two interaction types.</p>
 <div class="table-wrap"><table><thead><tr><th>Name</th><th>Action</th><th>Mode</th><th>Control Type</th><th>Sonic result</th></tr></thead><tbody><tr><td>Drive it</td><td>Tilt down</td><td>Natural</td><td>Continuous</td><td>Increases saturation</td></tr><tr><td>Cave it</td><td>Rotate left</td><td>Natural</td><td>Continuous</td><td>Increases reverb</td></tr><tr><td>Echo it</td><td>Rotate right</td><td>Natural</td><td>Continuous</td><td>Delay</td></tr><tr><td>Flip it</td><td>Tilt up (~75°)</td><td>Global</td><td>Toggle</td><td>Switches Natural ↔ Radical</td></tr><tr><td>Topsy-turvy</td><td>Tilt down (~75°)</td><td>Global</td><td>Toggle</td><td>Activates a random effect chain with randomized parameters and mappings</td></tr><tr><td>Ghost it</td><td>Tilt or rotate</td><td>Radical</td><td>Continuous</td><td>Modulates randomly assigned parameters</td></tr></tbody></table></div>
 <h4>How the two modes work</h4>
-<p>Natural mode uses continuous gesture input to extend sonic characteristics already intrinsic to the cuíca. Delay emphasizes cyclical rhythmic gestures associated with <em>samba carioca</em>; reverb prolongs the decay of sustained cuíca tones; and saturation accentuates the raspy, guttural qualities produced by friction against the membrane.</p>
-<p>Radical mode moves toward noisier and less predictable timbral territories through stochastic activation and modulation of multiple effects. The available devices include Ableton Live effects such as Grain Delay and Shifter, alongside Resonator and Pitch from Rodrigo Constanzo's <em>Confetti</em> library.</p>
-<p>Each downward Topsy-turvy gesture introduces three simultaneous layers of indeterminacy:</p>
-<ol>
-<li><strong>Random device selection:</strong> a probabilistic combination of up to four effects is activated.</li>
-<li><strong>Random parameter initialization:</strong> parameters of the activated devices receive random starting values.</li>
-<li><strong>Random mapping assignment:</strong> a subset of parameters is assigned to continuous tilt or rotation control.</li>
-</ol>
-<p>Because these processes are recalculated at each downward tilt, every activation creates a newly configured interaction topology. Gesture does not merely control sound; it also renegotiates the structure through which control takes place. Across both modes, the system combines two control logics: continuous control, in which motion data continuously modulates parameter values, and toggle control, in which gestures crossing defined thresholds activate or deactivate processes. Natural mode uses continuous control within stable relationships; Radical mode combines discrete triggers with subsequent continuous modulation. This expands performative agency while making unpredictability an intentional musical parameter.</p>
+<p>Natural mode uses continuous gestures to extend the cuíca's own sonic qualities: delay emphasizes cyclical rhythmic gestures associated with <em>samba carioca</em>, reverb prolongs sustained tones, and saturation highlights the raspy textures of friction. Radical mode explores noisier, less predictable timbres through randomized combinations of Ableton effects such as Grain Delay and Shifter, alongside Resonator and Pitch from Rodrigo Constanzo's <em>Confetti</em> library. Each Topsy-turvy gesture can select up to four devices, randomize their starting parameters and assign a subset to continuous tilt or rotation control. The resulting configuration changes with each activation, combining threshold-based toggles with continuous modulation and making unpredictability an intentional part of the performance.</p>
 
-<h4>FlowfalMap assignments</h4><div class="table-wrap"><table><thead><tr><th>FlowfalMap</th><th>Parameter</th><th>Range</th><th>Type</th></tr></thead><tbody><tr><td>Roll (wrap 180, −45° → +45°)</td><td>Reverb · Decay</td><td>0 → 100 %</td><td>continuous</td></tr><tr><td>Roll (wrap 180, −45° → +45°)</td><td>Reverb · Dry/Wet (two instances)</td><td>0 → 100 % and 26 → 82 %</td><td>continuous</td></tr><tr><td>Roll (wrap 180, −45° → +45°)</td><td>Track Panning (two controls)</td><td>26 → 81 % and 74 → 27 %</td><td>continuous</td></tr><tr><td>Pitch</td><td>Somax2 · Prob</td><td>0 → 100 %</td><td>continuous</td></tr></tbody></table></div>
 <div class="video">
   <div class="video-frame"><iframe src="https://www.youtube.com/embed/T_Xr2ulI9Pg?start=817" title="Frictionary — gesture-based sonic modulations" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </div>
@@ -220,6 +213,8 @@ author_profile: true
   <div class="video-frame"><iframe src="https://www.youtube.com/embed/tY7OuMaJVUM" title="Hypercuíca — Flowfal and Somax2 for Live" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </div>
 </section>
+
+<h4>FlowfalMap assignments</h4><div class="table-wrap"><table><thead><tr><th>FlowfalMap</th><th>Parameter</th><th>Range</th><th>Type</th></tr></thead><tbody><tr><td>Roll (wrap 180, −45° → +45°)</td><td>Reverb · Decay</td><td>0 → 100 %</td><td>continuous</td></tr><tr><td>Roll (wrap 180, −45° → +45°)</td><td>Reverb · Dry/Wet (two instances)</td><td>0 → 100 % and 26 → 82 %</td><td>continuous</td></tr><tr><td>Roll (wrap 180, −45° → +45°)</td><td>Track Panning (two controls)</td><td>26 → 81 % and 74 → 27 %</td><td>continuous</td></tr><tr><td>Pitch</td><td>Somax2 · Prob</td><td>0 → 100 %</td><td>continuous</td></tr></tbody></table></div>
 
 <h2>Creative explorations</h2>
 <div class="creative-item">
@@ -252,7 +247,7 @@ author_profile: true
 <p>Experiments connecting the phone's light sensor and the cuíca's audio signal to sound processing and visual effects. The light sensor and plugdata setup also informed explorations with TouchDesigner.</p>
 <div class="video"><div class="video-frame"><iframe src="https://www.youtube.com/embed/jA-pBH6xqX8" title="Light sensor, plugdata and audiovisual cuíca experiment" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
 <p><a href="https://www.youtube.com/watch?v=Fma3EjwlwYI" target="_blank" rel="noopener">Watch a performance combining elements of the NIME mapping and an earlier configuration</a>.</p>
-<p><a href="https://www.youtube.com/watch?v=HTk6czlTqic&amp;list=RDHTk6czlTqic&amp;start_radio=1&amp;t=1s" target="_blank" rel="noopener">Watch the Improfest audiovisual experiment</a> (also featured on the <a href="/media/">Media page</a>).</p>
+<p><a href="https://www.youtube.com/watch?v=HTk6czlTqic&amp;list=RDHTk6czlTqic&amp;start_radio=1&amp;t=1s" target="_blank" rel="noopener">Watch the Improfest audiovisual experiment</a>.</p>
 </div>
 
 <h2>Configurations in dialogue</h2>
