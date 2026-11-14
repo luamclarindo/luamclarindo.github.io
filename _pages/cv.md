@@ -5,11 +5,9 @@ author_profile: true
 ---
 
 <style>
-.cv-page { max-width:900px; margin:0 auto; font-size:.80em; line-height:1.42; }
-.cv-page p { margin-bottom:.75em; }
+.page__content { max-width:900px; margin-left:auto; margin-right:auto; font-size:.80em; line-height:1.42; }
+.page__content p { margin-bottom:.75em; }
 </style>
-
-<div class="cv-page">
 
 ## Very short CV
 
@@ -35,4 +33,3 @@ In 2026, he worked as a percussionist and arranger on Songs of Seeking: Fragment
 
 Luam is a member of the Brazilian Society of Electroacoustic Music (SBME) and Sonoscopia Cultural Association (Porto). Since 2017, he has organized Encontro de Pandeiros, a series of workshops with the pandeiro community, with recent editions at FIPCuritiba (Curitiba, 2023), Abadá Capoeira (Lisbon, 2024), and Casa da Horta (Porto, 2026).
 
-</div>
