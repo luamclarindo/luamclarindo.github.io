@@ -4,11 +4,6 @@ permalink: /cv/
 author_profile: true
 ---
 
-<style>
-.page__content { max-width:900px; margin-left:auto; margin-right:auto; font-size:.80em; line-height:1.42; }
-.page__content p { margin-bottom:.75em; }
-</style>
-
 ## Very short CV
 
 Luam Clarindo is a Brazilian percussionist, improviser, and researcher based in Portugal. His work explores the intersection of experimental music, embodied performance, and digital technology, with a particular focus on gesture-based sonic modulation and hybrid acoustic-digital instruments. Luam holds Bachelor’s and Master’s degrees in Music, specializing in Sound Creation, from the Federal University of Paraná (UFPR). His practice embraces imagination and free improvisation as fundamental modes of artistic creation.
@@ -32,4 +27,3 @@ In November 2025, Luam gave a masterclass and performance at the BINNAR Festival
 In 2026, he worked as a percussionist and arranger on Songs of Seeking: Fragmentos de Viagem, an INET-md project funded by the Direção-Geral das Artes (DGArtes), recording drums and percussion for the project’s album and performing in public presentations.
 
 Luam is a member of the Brazilian Society of Electroacoustic Music (SBME) and Sonoscopia Cultural Association (Porto). Since 2017, he has organized Encontro de Pandeiros, a series of workshops with the pandeiro community, with recent editions at FIPCuritiba (Curitiba, 2023), Abadá Capoeira (Lisbon, 2024), and Casa da Horta (Porto, 2026).
-
