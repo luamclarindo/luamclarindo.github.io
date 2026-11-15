@@ -444,9 +444,17 @@
 }
 
 
-/* Mobile navigation: keep the masthead clear and place every section in one menu. */
+/* Mobile navigation: keep every section hidden until the hamburger is opened. */
 .mobile-site-nav {
   display: none;
+}
+
+.mobile-site-nav__links {
+  display: none !important;
+}
+
+.mobile-site-nav.is-open .mobile-site-nav__links {
+  display: block !important;
 }
 
 @media (max-width: 925px) {
