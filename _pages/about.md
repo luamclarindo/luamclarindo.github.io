@@ -12,6 +12,10 @@ redirect_from:
 .page__content { font-size: 0.80em; line-height: 1.42; }
 .page__content p { margin-bottom: 0.75em; }
 .page__inner-wrap { padding-top: 0; }
+
+@media (max-width: 925px) {
+  #main { margin-top: 0.75em; }
+}
 </style>
 
 
