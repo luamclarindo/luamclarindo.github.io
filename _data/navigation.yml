@@ -1,11 +1,11 @@
 main:
-  - title: "Hypercuíca"
-    url: /portfolio/
-  - title: "Blog"
-    url: /year-archive/
-  - title: "CV"
-    url: /cv/
   - title: "Activities"
     url: /talks/
   - title: "Media"
     url: /media/
+  - title: "CV"
+    url: /cv/
+  - title: "Hypercuíca"
+    url: /portfolio/
+  - title: "Blog"
+    url: /year-archive/
