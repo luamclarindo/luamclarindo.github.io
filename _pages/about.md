@@ -14,7 +14,8 @@ redirect_from:
 .page__inner-wrap { padding-top: 0; }
 
 @media (max-width: 925px) {
-  #main { margin-top: 0.75em; }
+  #main { margin-top: 0; }
+  #main > .sidebar { margin-top: 0; }
 }
 </style>
 
