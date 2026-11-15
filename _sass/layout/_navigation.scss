@@ -552,3 +552,10 @@
     }
   }
 }
+
+/* Keep the author sidebar on desktop; hide it on mobile outside the homepage. */
+@media (max-width: 925px) {
+  .sidebar--mobile-hidden {
+    display: none !important;
+  }
+}
