@@ -27,6 +27,9 @@
           <span class="mobile-site-nav__icon"></span>
         </button>
         <ul class="mobile-site-nav__links">
+          <li class="{% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
+            <a href="{{ base_path }}/">Home</a>
+          </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
