@@ -13,6 +13,10 @@ redirect_from:
 .page__content p { margin-bottom: 0.75em; }
 .page__inner-wrap { padding-top: 0; }
 
+@media (min-width: 926px) {
+  .page__content { font-size: calc(0.80em + 1pt); }
+}
+
 @media (max-width: 925px) {
   #main { margin-top: 0; }
   #main > .sidebar { margin-top: 0; }
