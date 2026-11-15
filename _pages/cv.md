@@ -6,7 +6,7 @@ author_profile: true
 
 <style>
 .page__content {
-  font-size: .80em;
+  font-size: .78em;
   line-height: 1.42;
 }
 .page__content h2 {
