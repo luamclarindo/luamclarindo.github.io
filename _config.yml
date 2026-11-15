@@ -201,6 +201,7 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 timezone: Etc/UTC
+words_per_minute: 200
 
 # Plugins
 plugins:
