@@ -14,6 +14,9 @@ author_profile: true
   padding-bottom: .25em;
   border-bottom: 1px solid #ddd;
 }
+.page__content h2:first-of-type {
+  margin-top: 0;
+}
 .page__content p {
   margin-bottom: .75em;
 }
