@@ -5,24 +5,19 @@ author_profile: true
 ---
 
 <style>
-.cv-page {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+.page__content {
   font-size: .80em;
   line-height: 1.42;
 }
-.cv-page h2 {
+.page__content h2 {
   margin-top: 2.2em;
   padding-bottom: .25em;
   border-bottom: 1px solid #ddd;
 }
-.cv-page p {
+.page__content p {
   margin-bottom: .75em;
 }
 </style>
-
-<div class="cv-page">
 
 ## Very short CV
 
@@ -47,5 +42,3 @@ In November 2025, Luam gave a masterclass and performance at the BINNAR Festival
 In 2026, he worked as a percussionist and arranger on Songs of Seeking: Fragmentos de Viagem, an INET-md project funded by the Direção-Geral das Artes (DGArtes), recording drums and percussion for the project’s album and performing in public presentations.
 
 Luam is a member of the Brazilian Society of Electroacoustic Music (SBME) and Sonoscopia Cultural Association (Porto). Since 2017, he has organized Encontro de Pandeiros, a series of workshops with the pandeiro community, with recent editions at FIPCuritiba (Curitiba, 2023), Abadá Capoeira (Lisbon, 2024), and Casa da Horta (Porto, 2026).
-
-</div>
