@@ -182,4 +182,18 @@ $(document).ready(function () {
     }
   });
 
+
+  // Mobile section menu
+  $(".mobile-site-nav__toggle").on("click", function () {
+    const isOpen = $(".mobile-site-nav").toggleClass("is-open").hasClass("is-open");
+    $(this).attr("aria-expanded", isOpen ? "true" : "false");
+    $(this).attr("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+  });
+
+  // Close the mobile menu after choosing a section
+  $(".mobile-site-nav__links a").on("click", function () {
+    $(".mobile-site-nav").removeClass("is-open");
+    $(".mobile-site-nav__toggle").attr("aria-expanded", "false").attr("aria-label", "Open navigation menu");
+  });
+
 });
