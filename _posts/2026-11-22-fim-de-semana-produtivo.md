@@ -15,7 +15,7 @@ Ontem passei o dia testando algumas ferramentas de machine learning para música
 
 Ontem comecei a lidar com a parte visual do Max/MSP. Ela se chama Jitter. Até então, eu só tinha trabalhado com o TouchDesigner, mas estou pensando em deixar tudo em um programa só. Estou com a ideia de criar uma performance com partes distintas, usando alguns dos meus projetos e mapeamentos, e focar neste último, que envolve os agentes de IA do Somax2 improvisando comigo. Nesse sentido, também gostaria de retomar a questão visual e pensar em projeções ou filtros para alterar a imagem da webcam conforme o timbre da performance se altera.
 
-Hoje também li um artigo muito legal sobre loteria-gambiarra na América Latina como manifestação colonial. É um trabalho de Özgür Turan para a revista *Organised Sound*.
+Hoje também li um artigo muito legal sobre luteria-gambiarra na América Latina como manifestação colonial. É um trabalho de Özgür Turan para a revista *Organised Sound*.
 
 Gostaria de um dia publicar um artigo para uma revista grande como essa. Almejo que meu trabalho se aprofunde não só na técnica, mas também no sentido, e que ganhe mais reconhecimento. Seria interessante que alcançasse mais pessoas e não ficasse restrito ao academiquês. Esse mundo da academia me encanta, e pesquisar me dá mais vontade de criar. Porém, sinto que também é um mundo paralelo, longe dos problemas reais e das rotinas da maioria das pessoas que estão ao meu redor.
 
